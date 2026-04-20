@@ -1,0 +1,66 @@
+1️⃣ Why Collections Came Into Java
+ Ans:- Before Java Collections Framework, programmers mostly used arrays.
+ Example:
+ int[] numbers = new int[5];
+ Arrays were the primary way to store multiple values.
+
+ But arrays had serious limitations.
+
+ ❌ Problem 1 — Fixed Size
+Array size cannot change after creation.
+int[] numbers = new int[5];
+You can store only 5 values.
+If you suddenly need 6 values, the program fails.
+To fix it you must:
+	1.	Create a new array
+	2.	Copy old elements
+	3.	Add new element
+
+Example:-
+Old Array
+[10, 20, 30, 40, 50]
+Create New Array
+[10, 20, 30, 40, 50, 60]
+This is slow and inconvenient.
+
+❌ Problem 2 — No Built-in Operations
+Arrays only store data.
+
+They do not provide operations like:
+	•	add element
+	•	remove element
+	•	search element
+	•	sort elements
+	•	check duplicates
+
+Programmers had to write all logic manually.
+
+Example:
+Finding element in array:
+for(int i=0;i<arr.length;i++)
+Every time you must write loops.
+
+❌ Problem 3 — Cannot Easily Handle Complex Data
+Suppose you want to store different objects.
+Example:
+Student
+Employee
+Order
+Product
+Arrays are not flexible for managing complex objects.
+
+❌ Problem 4 — No Standard Data Structures
+Computer Science already had powerful structures:
+	•	Lists
+	•	Stacks
+	•	Queues
+	•	Hash Tables
+	•	Trees
+
+But Java originally did not provide a standard library for them.
+Every programmer implemented their own version.
+
+Result:
+❌ messy code
+❌ repeated work
+❌ inconsistent implementations
